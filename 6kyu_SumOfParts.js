@@ -27,3 +27,11 @@ function partsSums(ls) {
     ls.reverse().forEach(num => arr.push(arr[arr.length - 1] + num));
     return arr.reverse();
 };
+
+// What's happening?
+// We first create a function that accepts an array
+// We first create a new array that we will return later
+// we then reverse the array we accept as an arg, then loop through it
+// for each iteration we push a new value onto the arr array
+// the new value is the last elemnet in the arr array added with the current num for the iteration, which should be the sum of the previous part
+// the we reverse the arr and return it
